@@ -1,0 +1,148 @@
+{# about.html #}
+{% extends 'base.html' %}
+
+{% block title %}About | AgriTech{% endblock %}
+
+{% block content %}
+
+
+<div class="space-y-16 py-16">
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">About AgriTech</h1>
+            <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                Founded in 2020, AgriTech has been at the forefront of agricultural innovation,
+                combining traditional farming wisdom with modern technology to create sustainable
+                solutions for the challenges facing today's farmers.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Modern farming" class="rounded-2xl shadow-2xl">
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold">Our Story</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    What started as a small research project has grown into a global platform
+                    serving over 10,000 farmers across 50 countries. We've helped increase
+                    crop yields by an average of 30% while reducing environmental impact.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Our team of agricultural experts, data scientists, and engineers work
+                    together to develop solutions that address real farming challenges,
+                    from precision agriculture to sustainable pest management.
+                </p>
+                <div class="flex items-center space-x-4 pt-4">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-emerald-600">10K+</div>
+                        <div class="text-sm text-gray-600">Farmers Served</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-emerald-600">50+</div>
+                        <div class="text-sm text-gray-600">Countries</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-emerald-600">1M+</div>
+                        <div class="text-sm text-gray-600">Hectares</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Core Values</h2>
+                <p class="text-lg text-gray-600">The principles that guide everything we do</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <i data-lucide="leaf" class="h-8 w-8 text-emerald-600 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
+                    <p class="text-gray-600">We believe in farming practices that protect our planet while ensuring food
+                        security for future generations.</p>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <i data-lucide="lightbulb" class="h-8 w-8 text-amber-600 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+                    <p class="text-gray-600">Continuously developing cutting-edge solutions that revolutionize
+                        traditional farming methods.</p>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <i data-lucide="users" class="h-8 w-8 text-blue-600 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Community</h3>
+                    <p class="text-gray-600">Building strong relationships with farmers and supporting agricultural
+                        communities worldwide.</p>
+                </div>
+                <div class="text-center p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <i data-lucide="award" class="h-8 w-8 text-purple-600 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Excellence</h3>
+                    <p class="text-gray-600">Committed to delivering the highest quality products and services to help
+                        farmers succeed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl p-8 text-white">
+                <i data-lucide="target" class="h-12 w-12 mb-6"></i>
+                <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+                <p class="text-lg leading-relaxed opacity-90">
+                    To empower farmers with innovative technology and sustainable practices that increase productivity,
+                    reduce environmental impact, and ensure food security for generations to come.
+                </p>
+            </div>
+            <div class="bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl p-8 text-white">
+                <i data-lucide="globe" class="h-12 w-12 mb-6"></i>
+                <h2 class="text-3xl font-bold mb-4">Our Vision</h2>
+                <p class="text-lg leading-relaxed opacity-90">
+                    A world where every farmer has access to the tools and knowledge needed to grow healthy crops
+                    sustainably, contributing to a more food-secure and environmentally conscious planet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
+                <p class="text-lg text-gray-600">The experts behind AgriTech's innovation</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <img src="https://images.pexels.com/photos/3760854/pexels-photo-3760854.jpeg?auto=compress&cs=tinysrgb&w=300"
+                        class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Dr. Sarah Johnson</h3>
+                    <p class="text-emerald-600 font-medium mb-2">Chief Agricultural Officer</p>
+                    <p class="text-gray-600 text-sm">Sustainable Agriculture</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <img src="https://images.pexels.com/photos/3760076/pexels-photo-3760076.jpeg?auto=compress&cs=tinysrgb&w=300"
+                        class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Michael Chen</h3>
+                    <p class="text-emerald-600 font-medium mb-2">Head of Technology</p>
+                    <p class="text-gray-600 text-sm">AI & IoT Solutions</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <img src="https://images.pexels.com/photos/3760267/pexels-photo-3760267.jpeg?auto=compress&cs=tinysrgb&w=300"
+                        class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Emma Rodriguez</h3>
+                    <p class="text-emerald-600 font-medium mb-2">Market Research Director</p>
+                    <p class="text-gray-600 text-sm">Agricultural Economics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

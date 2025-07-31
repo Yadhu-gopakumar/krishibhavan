@@ -1,0 +1,83 @@
+{# partials/nav.html #}
+<nav class="bg-white/90 backdrop-blur-md shadow-lg border-b border-emerald-100 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center space-x-2">
+        <div class="bg-gradient-to-r from-emerald-500 to-amber-500 p-2 rounded-lg">
+          <i data-lucide="leaf" class="text-white w-6 h-6"></i>
+        </div>
+        <span class="text-xl font-bold bg-gradient-to-r from-emerald-700 to-amber-700 bg-clip-text text-transparent">
+          AgriTech
+        </span>
+      </div>
+
+      <div class="hidden lg:flex items-center space-x-1">
+        <a href="{% url 'home' %}"
+          class="px-4 py-2 rounded-lg text-sm font-medium {% if request.path == '/' %}bg-emerald-100 text-emerald-700{% else %}text-gray-700 hover:bg-emerald-50 hover:text-emerald-700{% endif %}">
+          Home
+        </a>
+
+        <a href="{% url 'about' %}"
+          class="px-4 py-2 rounded-lg text-sm font-medium {% if request.path == '/about/' %}bg-emerald-100 text-emerald-700{% else %}text-gray-700 hover:bg-emerald-50 hover:text-emerald-700{% endif %}">
+          About
+        </a>
+        <a href="{% url 'weather' %}"
+          class="px-4 py-2 rounded-lg text-sm font-medium {% if request.path == '/weather/' %}bg-emerald-100 text-emerald-700{% else %}text-gray-700 hover:bg-emerald-50 hover:text-emerald-700{% endif %}">Weather</a>
+
+        <a href="{% url 'ecart' %}"
+          class="px-4 py-2 rounded-lg text-sm font-medium {% if request.path == '/ecart/' %}bg-emerald-100 text-emerald-700{% else %}text-gray-700 hover:bg-emerald-50 hover:text-emerald-700{% endif %}">E-Cart</a>
+
+        <a href="{% url 'marketrate' %}"
+          class="px-4 py-2 rounded-lg text-sm font-medium {% if request.path == '/marketrate/' %}bg-emerald-100 text-emerald-700{% else %}text-gray-700 hover:bg-emerald-50 hover:text-emerald-700{% endif %}">Market
+          Rate</a>
+
+        <a href="{% url 'plantingmaterials' %}"
+          class="px-4 py-2 rounded-lg text-sm font-medium {% if request.path == '/plantingmaterials/' %}bg-emerald-100 text-emerald-700{% else %}text-gray-700 hover:bg-emerald-50 hover:text-emerald-700{% endif %}">Planting
+          Materials</a>
+
+        <a href="{% url 'tips' %}"
+          class="px-4 py-2 rounded-lg text-sm font-medium {% if request.path == '/tips/' %}bg-emerald-100 text-emerald-700{% else %}text-gray-700 hover:bg-emerald-50 hover:text-emerald-700{% endif %}">Agriculture
+          Tips</a>
+
+        <a href="{% url 'gallery' %}"
+          class="px-4 py-2 rounded-lg text-sm font-medium {% if request.path == '/gallery/' %}bg-emerald-100 text-emerald-700{% else %}text-gray-700 hover:bg-emerald-50 hover:text-emerald-700{% endif %}">Gallery</a>
+
+        <a href="{% url 'contact' %}"
+          class="px-4 py-2 rounded-lg text-sm font-medium {% if request.path == '/contact/' %}bg-emerald-100 text-emerald-700{% else %}text-gray-700 hover:bg-emerald-50 hover:text-emerald-700{% endif %}">Contact</a>
+      </div>
+
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="p-2 rounded-lg text-gray-700 hover:bg-emerald-50 transition-colors">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden pb-4 hidden">
+      <div class="space-y-1">
+        <a href="{% url 'home' %}"
+          class="block w-full text-left px-4 py-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">Home</a>
+        <a href="{% url 'about' %}"
+          class="block w-full text-left px-4 py-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">About</a>
+        <a href="{% url 'weather' %}"
+          class="block w-full text-left px-4 py-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">Weather</a>
+        <a href="{% url 'ecart' %}"
+          class="block w-full text-left px-4 py-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">E-Cart</a>
+        <a href="{% url 'marketrate' %}"
+          class="block w-full text-left px-4 py-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">Market
+          Rate</a>
+        <a href="{% url 'plantingmaterials' %}"
+          class="block w-full text-left px-4 py-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">Planting
+          Materials</a>
+        <a href="{% url 'tips' %}"
+          class="block w-full text-left px-4 py-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">Agriculture
+          Tips</a>
+        <a href="{% url 'gallery' %}"
+          class="block w-full text-left px-4 py-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">Gallery</a>
+        <a href="{% url 'contact' %}"
+          class="block w-full text-left px-4 py-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
